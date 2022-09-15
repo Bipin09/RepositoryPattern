@@ -1,4 +1,5 @@
 ﻿using Queries.Persistence;
+using System;
 
 namespace Queries
 {
@@ -20,6 +21,9 @@ namespace Queries
                 unitOfWork.Authors.Remove(author);
                 unitOfWork.Complete();
             }
+
+            Console.WriteLine("Test");
+
         }
     }
 }
